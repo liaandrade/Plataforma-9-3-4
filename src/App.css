@@ -1,0 +1,83 @@
+.navbar-brand img {
+    max-width: 100px;
+}
+  
+.nav-link {
+    border-radius: 10px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.nav-link:hover {
+    background-color: rgba(16, 152, 173, 0.3);
+    transform: translateY(-2px);
+    translate: 2s;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.container h1{
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.btn{
+    background-color:  rgb(16, 152, 173);
+    border-radius: 20px;
+    padding: 8px 20px;
+    border: transparent;
+}
+
+.btn:hover{
+    background-color: rgb(255, 68, 0);
+    translate: 2s
+}
+
+.row img{
+    max-height: 320px;
+    object-fit:contain;
+    border-radius: 100%;
+}
+
+.btn a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.custom-opacity{
+    opacity: 0.6;
+}
+
+.card img{
+    max-width: 600px;
+    max-height: 450px;
+}
+
+.rounded-circle{
+    max-width: 200px;
+}
+
+.color{
+    background-color: rgb(16, 152, 173);
+    color: whitesmoke;
+}
+
+.carousel-inner img{
+    height: 500px;
+    object-fit: cover;
+}
+
+footer{
+    background-color: rgb(16, 152, 173);
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+}
+
+@media (max-width: 800px){
+    .card img{
+        max-width: 600px;
+        max-height: 450px;
+    }
+}
