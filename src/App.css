@@ -34,7 +34,7 @@
 }
 
 .row img{
-    max-height: 350px;
+    max-height: 320px;
     object-fit:contain;
     border-radius: 100%;
 }

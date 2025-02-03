@@ -38,6 +38,6 @@ Esse comando inicializará a aplicação e exibirá o link para acessá-lo no na
 Observação: Este projeto utiliza React com Vite para um ambiente de desenvolvimento rápido e eficiente. O plugin @vitejs/plugin-reacté usado para atualização o Fast Refresh, garantindo atualizações rápidas sem recarregar a página. Caso necessário, é possível usar @vitejs/plugin-react-swccomo alternativa, que usa SWC para maior desempenho.
 
 ## Licença
-O projeto está disponível sob a Licença MIT, que permite o uso, modificação e distribuição do código com algumas restrições mínimas. Consulte o arquivo LICENSE para mais informações.
+O projeto está disponível sob a Licença MIT, que permite o uso, modificação e distribuição do código com algumas restrições mínimas. Consulte o arquivo LICENSE para mais informações!
 
 
