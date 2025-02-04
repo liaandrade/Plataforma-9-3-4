@@ -15,15 +15,14 @@ import ListOrder from '../list-order/ListOrder';
 
 
 const Home = () => {
-return (
-<>
+return <>
   <header>
     <div>
       <Navbar expand="lg" className="bg-light custom-navbar">
         <Container className="d-flex align-items-center justify-content-between">
 
           <Navbar.Brand href="#home" className="navbar-brand m-0">
-            <img src={brand} alt="Logomarca" className="img-fluid w-auto h-auto" />
+            <img src={brand} alt="Logomarca" className="img-fluid w-auto h-auto"></img>
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -59,44 +58,6 @@ return (
         </div>
       </div>
     </section>
-
-
-      <section className="color" id="about">
-      <h2 className="container pt-4 mt-5">Sobre</h2>
-
-      <div className="container">
-        <p className="text-justify fst-italic">Fundada no ano 329 do Ciclo Solar, a Plataforma 9 3/4 Imóveis é a mais
-          prestigiada imobiliária de todo o
-          Reino dos Sete Céus, é inovadora e surgiu na cidade de Lúmina, onde magia e tecnologia se misturam de maneira
-          disruptiva. Criada por um grupo de jovens magos e arquétipos, a startup tem como objetivo transformar a
-          experiência de procurar imóveis mágicos em algo mais simples e acessível, para todos, desde feiticeiros
-          iniciantes até viajantes interdimensionais. Conheça um pouco dos nossos ambientes:
-        </p>
-
-        <div class="carousel slide pb-5" id="carouselabout">
-          <Carousel fade>
-            <Carousel.Item>
-              <img
-                className="w-100" src={localone} alt='Ambiente'
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="w-100" src={localtwo} alt='Ambiente'
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="w-100" src={localthree} alt='Ambiente'
-              />
-            </Carousel.Item>
-          </Carousel>
-        </div>
-      </div>
-    </section>
-
-
-  <ListOrder />
 
 
     <section className="container" id="testemony">
@@ -149,8 +110,52 @@ return (
     </section>
 
 
+  <ListOrder />
+
+  
+  <section className="color" id="about">
+      <h2 className="container pt-4 mt-5">Sobre</h2>
+
+      <div className="container">
+        <p className="text-justify fst-italic">Fundada no ano 329 do Ciclo Solar, a Plataforma 9 3/4 Imóveis é a mais
+          prestigiada imobiliária de todo o
+          Reino dos Sete Céus, é inovadora e surgiu na cidade de Lúmina, onde magia e tecnologia se misturam de maneira
+          disruptiva. Criada por um grupo de jovens magos e arquétipos, a startup tem como objetivo transformar a
+          experiência de procurar imóveis mágicos em algo mais simples e acessível, para todos, desde feiticeiros
+          iniciantes até viajantes interdimensionais. Conheça um pouco dos nossos ambientes:
+        </p>
+
+        <div class="carousel slide pb-5" id="carouselabout">
+          <Carousel fade>
+            <Carousel.Item>
+              <img
+                className="w-100" src={localone} alt='Ambiente'
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="w-100" src={localtwo} alt='Ambiente'
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="w-100" src={localthree} alt='Ambiente'
+              />
+            </Carousel.Item>
+          </Carousel>
+        </div>
+      </div>
+    </section>
+
+
     <section className="container text-center text-md-start mt-5" id="operation">
       <div className="row align-items-center text-start">
+
+      <div className="col-12 col-md-6 d-md-block">
+          <figure>
+            <img className="w-100" src={witcher} alt="Bruxa" />
+          </figure>
+        </div>
 
       <div className="col">
           <h1>Como funcionamos?</h1>
@@ -163,11 +168,6 @@ return (
           </ul>
         </div>
         
-        <div className="col-12 col-md-6 d-md-block">
-          <figure>
-            <img className="w-100" src={witcher} alt="Bruxa" />
-          </figure>
-        </div>
       </div>
     </section>
   </main>
@@ -177,8 +177,7 @@ return (
   <footer>
     <p> &copy; 2025 - Lia Andrade</p>
   </footer>
-</>
-)
+</>;
 }
 
 export default Home
