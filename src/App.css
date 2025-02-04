@@ -1,5 +1,5 @@
 .navbar-brand img {
-    max-width: 100px;
+    max-width: 110px;
 }
   
 .nav-link {
@@ -21,22 +21,29 @@
     margin-bottom: 30px;
 }
 
+.custom-vh{
+    min-height: 75vh;
+}
+
 .btn{
     background-color:  rgb(16, 152, 173);
     border-radius: 20px;
     padding: 8px 20px;
     border: transparent;
+    color: whitesmoke;
+    font-weight: 500;
 }
 
 .btn:hover{
     background-color: rgb(255, 68, 0);
-    translate: 2s
+    translate: 2s;
+    color: whitesmoke;
+    font-weight: 500;
 }
 
-.row img{
+.col-12 img{
     max-height: 320px;
-    object-fit:contain;
-    border-radius: 100%;
+    object-fit: contain;
 }
 
 .btn a{
@@ -51,6 +58,21 @@
 .card img{
     max-width: 600px;
     max-height: 450px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.custom-card{
+    border-radius: 20px;
+}
+
+.custom-card:hover{
+    border-radius: 20px;
+    transform: translateY(-3px);
+    box-shadow: 10px 10px 53px 0px rgba(186,186,186,0.5);
+    -webkit-box-shadow: 10px 10px 53px 0px rgba(186,186,186,0.5);
+    -moz-box-shadow: 10px 10px 53px 0px rgba(186,186,186,0.5);
+    transition: 1s;
 }
 
 .rounded-circle{
