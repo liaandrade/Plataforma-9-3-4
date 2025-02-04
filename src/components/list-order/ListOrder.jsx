@@ -2,8 +2,12 @@ import React, { useState } from 'react';
 import firstpro from '../../img/first-pro.jpg';
 import secondprop from '../../img/second-prop.jpg';
 import thirdtprop from '../../img/third-prop.jpeg';
+import { useNavigate } from 'react-router-dom';
+
 
 const ListOrder = () => {
+
+    const navigate = useNavigate()
     const [rents, setRents] = useState([
     {
         id: 1,
@@ -11,7 +15,9 @@ const ListOrder = () => {
         addres: "Estrada da névoa nº13 - Encantadas, Lúmina",
         description: "3 quartos/ 1 sala secreta",
         price: 3500,
-        img: firstpro
+        img: firstpro,
+        url: "/imovel001"
+
     },
 
     {
@@ -20,7 +26,8 @@ const ListOrder = () => {
         addres: "Colina dos astros nº42 - Vila Celestial, Lúmina",
         description: "2 quartos/ 1 observatório",
         price: 4200,
-        img: secondprop
+        img: secondprop,
+        url: "imovel002"
     },
 
     {
@@ -29,15 +36,14 @@ const ListOrder = () => {
         addres: "Margens místicas nº84 - Bosque, Lúmina",
         description: "4 quartos/ 1 cais privado",
         price: 3800,
-        img: thirdtprop
+        img: thirdtprop,
+        url: "imovel003"
     },
     ]);
-
     const filterlower = () => {
     const lowerPrice = [...rents].sort((a, b) => a.price - b.price) 
     setRents (lowerPrice);
     };
-
     const filterhighest = () => {
     const highestPrice = [...rents].sort((a, b) => b.price - a.price) 
     setRents (highestPrice);
@@ -84,7 +90,7 @@ return (
           </span><strong>{rents.price.toString().slice(0, 1) + "." + rents.price.toString().slice(1)} G</strong></p>
           
             <div className="text-center">
-              <button className="btn">Saiba mais</button>
+              <button className="btn" onClick={() => navigate(rents.url)}>Saiba mais</button>
             </div>
         </div>
       </div>
