@@ -1,10 +1,10 @@
-import App from "./App"
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import {createBrowserRouter, RouterProvider} from "react-router-dom"
-import Rentone from "./pages/rentone/Rentone"
-import Rentthree from "./pages/rentthree/Rentthree"
-import Renttwo from "./pages/renttwo/Renttwo"
+import App from './App';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import Rentone from './pages/rentone/Rentone';
+import Rentthree from './pages/rentthree/Rentthree';
+import Renttwo from './pages/renttwo/Renttwo';
 
 const router = createBrowserRouter([
   {
