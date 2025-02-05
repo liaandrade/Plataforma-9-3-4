@@ -17,7 +17,8 @@ import classNames from 'classnames';
 
 
 const Home = () => {
-return <>
+return (
+<>
   <header>
     <div>
       <Navbar expand="lg" className={classNames("bg-light", styles["custom-navbar"])}>
@@ -160,7 +161,7 @@ return <>
 
         <div className={classNames("col")}>
             <h1>Como funcionamos?</h1>
-            <ul className={classNames("text-sm-start", "pb-4")}>
+            <ul className="text-sm-start pb-4">
               <li className={classNames("mb-3")}>O pagamento de nossos imóveis é feito com Galeões de ouro. Para evitar dores de cabeças com quebra de contrato ou débitos, solicitamos que o compromisso seja firmado mediante um feitiço de fidelidade!</li>
               <li className={classNames("mb-3")}>Todo imóvel passa por uma inspeção do Departamento de Regulamentação das Propriedades Bruxas.</li>
               <li className={classNames("mb-3")}>Cada casa recebe um selo mágico com categorias como "Alta Magia Residencial" e "Isolamento Atitrouxas".</li>
@@ -178,7 +179,8 @@ return <>
   <footer>
     <p> &copy; 2025 - Lia Andrade</p>
   </footer>
-</>;
+</>
+);
 }
 
 export default Home

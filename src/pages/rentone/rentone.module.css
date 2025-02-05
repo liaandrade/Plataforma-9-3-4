@@ -1,0 +1,42 @@
+.custom-rent{
+    color: rgb(69, 67, 67);
+    background-color: whitesmoke;
+}
+
+.custom-navbar {
+    padding: 0px 10px;
+    max-height: 85px;
+}
+
+.custom-carousel-img{
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.custom-btn{
+    background-color: rgb(255, 68, 0);
+    border-radius: 20px;
+    padding: 10px 24px;
+    font-size: large;
+    border: transparent;
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+.custom-btn:hover{
+    background-color: rgb(16, 152, 173);
+    translate: 1s;
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+.color{
+    background-color:  rgb(16, 152, 173, 0.6);
+    color: whitesmoke;
+}
+
+footer{
+    background-color: whitesmoke;
+    color: rgb(69, 67, 67);
+}
