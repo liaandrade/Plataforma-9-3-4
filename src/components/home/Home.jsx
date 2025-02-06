@@ -176,7 +176,7 @@ return (
 
 
 
-  <footer>
+  <footer className={classNames(styles["custom-foot"])}>
     <p> &copy; 2025 - Lia Andrade</p>
   </footer>
 </>

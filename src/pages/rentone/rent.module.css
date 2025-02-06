@@ -36,7 +36,8 @@
     color: whitesmoke;
 }
 
-footer{
+.custom-footer{
     background-color: whitesmoke;
     color: rgb(69, 67, 67);
+    text-align: center;
 }
