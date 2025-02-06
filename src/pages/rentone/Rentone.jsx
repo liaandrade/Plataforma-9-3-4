@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import brand from '../../img/brand.png';
 import Carousel from 'react-bootstrap/Carousel';
-import styles from './rentone.module.css';
+import styles from './rent.module.css';
 import classNames from 'classnames';
 import { useNavigate } from 'react-router-dom';
 import firstpro from '../../img/first-pro.jpg';
@@ -12,6 +12,7 @@ import rentonetwo from '../../img/rentone-two.jpg';
 import rentonethree from '../../img/rentone-three.jpg';
 import Row from 'react-bootstrap/Row'; 
 import Col from 'react-bootstrap/Col';  
+import button from '../../components/button/button';
 
 
 const Rentone = () => {
@@ -99,7 +100,7 @@ const navigate = useNavigate();
 
 
       <footer className={classNames("position-fixed", "bottom-0","w-100", "py-2")}>
-        <button className={classNames("text-center", styles["custom-btn"])}>Agendar visita</button>
+        <button className={classNames("text-center", styles["custom-btn"])} onClick={button}>Agendar visita</button>
       </footer>
     </div>
   )
